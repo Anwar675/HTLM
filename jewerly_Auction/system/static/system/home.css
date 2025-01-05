@@ -3,6 +3,8 @@ body {
   margin: 0;
 }
 
+/* ================================================Head========================================= */
+
 .head {
   padding: 0 24px;
   display: grid;
@@ -64,7 +66,7 @@ body {
 /* head-bar  */
 
 .head-bar {
-    background-color: #5a5959;
+  background-color: #5a5959;
 }
 
 .head-bar ul {
@@ -72,11 +74,110 @@ body {
   list-style: none;
   justify-content: space-around;
   padding: 16px 150px;
-  margin:0;
-  color:white
+  margin: 0;
+  color: white;
 }
 
 .head-bar ul li {
-    cursor: pointer;
-    font-size:14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ================================================Body========================================= */
+
+.body-main {
+  background-color: rgb(61, 58, 58);
+  color: white;
+}
+
+.body-main-i,
+.body-main-li,
+.body-main-r {
+  padding: 48px 32px;
+  
+}
+
+.body-main-li h2 {
+  padding-bottom: 18px;
+}
+
+.body-main-h img {
+  object-fit: fill;
+}
+
+.body-main-product {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.body-main-items {
+  object-fit: cover;
+
+  width: 400px;
+  height: 420px;
+  padding: 0 16px;
+}
+
+.body-main-items p {
+  color: #EDD184;;
+}
+
+.body-main-items img {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.body-main-li-h {
+  display: flex;
+  justify-content: space-around;
+}
+
+.body-main-li-dimond {
+  padding: 20px;
+  background-color: #5a5959;
+  border-radius: 100%;
+  position: relative;
+}
+
+.body-main-li-dimond p {
+  position: absolute;
+  color: #EDD184;
+  width: 200px;
+  text-align: center;
+  z-index: 1;
+  bottom: -40px;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.body-main-li-dimond img {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.body-main-li-dimond img:hover {
+  transform: scale(1.2);
+}
+
+.body-main-r-ser {
+  display:flex
+}
+
+.body-main-r-ser-item {
+  text-align: center;
+  padding:10px;
+  margin-right: 20px;
+  background-color: #5a5959;
+  border-radius: 8px;
+  
+
+}
+
+.body-main-r-ser-item p {
+  font-size:13px;
+  line-height: 1.5;
 }
