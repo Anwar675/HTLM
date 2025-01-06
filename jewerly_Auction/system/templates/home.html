@@ -60,6 +60,14 @@
             width="100%"
             height="500"
           />
+          <div class="body-main-h-descr">
+            <p>Chào mừng quý khách đã đến với Phần Mềm Định Giá Kim Cương!</p>
+            <span
+              >Chúng tôi là công ty phần mềm chuyên cung cấp giải pháp quản lý
+              ngành kim cương đá quý với nhiều trang thiết bị hiện đại đo đạc
+              chính xác nhất.
+            </span>
+          </div>
         </div>
         <div class="body-main-li">
           <h2>DANH MỤC NỔI BẬT</h2>
@@ -78,7 +86,7 @@
             </div>
             <div class="body-main-li-dimond">
               <img src="{% static 'system/img/vo-nhan.png' %}" />
-              <p>Vỏ nhẫn kim cương </p>
+              <p>Vỏ nhẫn kim cương</p>
             </div>
             <div class="body-main-li-dimond">
               <img src="{% static 'system/img/bong-tai.png' %}" />
@@ -93,32 +101,46 @@
           </div>
         </div>
         <div class="body-main-i">
-          <h2>CÔNG CỤ ĐO ĐẠC</h2>
-          <p>Trang bị những trang thiết bị hiện đại đo đạt chuẩn xác nhất</p>
+          <h2>KIẾN THỨC KIM CƯƠNG</h2>
+          <p>Tổng hợp những bài viết mới nhất về kim cương, hột xoàn</p>
           <div class="body-main-product">
             <div class="body-main-items">
               <img
-                src="{% static 'system/img/machin-2.png' %}"
+                src="{% static 'system/img/knowlage-1.jpg' %}"
                 width="100%"
-                height="100%"
               />
-              <p>YEHUDA SH4.0</p>
+              <h4>Bông tai, khuyên tai vàng trắng đẹp, giá tốt nhất 2025</h4>
+              <p>
+                Khuyên tai vàng trắng là gì? Khuyên tai, hoa tai hay bông tai
+                vàng trắng là món trang sức đeo trên tai được làm từ chất liệu
+                vàng trắng. Nó sở hữu màu trắng ánh kim tinh khiết và lấp lánh
+              </p>
             </div>
             <div class="body-main-items">
               <img
-                src="{% static 'system/img/machin.png' %}"
+                src="{% static 'system/img/knowlage-2.jpg' %}"
                 width="100%"
-                height="100%"
               />
-              <p>AMS2</p>
+              <h4>Nên mua vàng hay kim cương? Cái nào đáng đầu tư hơn?</h4>
+              <p>
+                Việc đánh giá vàng hay kim cương có giá trị hơn phụ thuộc vào
+                nhiều yếu tố như mục đích sử dụng, bối cảnh thị trường và tiêu
+                chí đầu tư của từng cá nhân. Dưới đây là một số phân tích chi
+                tiết từ các chuyên gia hàng đầu trong ngành
+              </p>
             </div>
             <div class="body-main-items">
               <img
-                src="{% static 'system/img/machin-3.png' %}"
+                src="{% static 'system/img/knowlage-3.jpg' %}"
                 width="100%"
-                height="100%"
               />
-              <p>GIA iD100®</p>
+              <h4>Kiểm định kim cương GIA: Tất cả thông tin mới nhất</h4>
+              <p>
+                Gemological Institute of America (GIA) là tổ chức hàng đầu thế
+                giới trong việc giám định đá quý, đặc biệt là kim cương. GIA
+                được xem là chuẩn mực toàn cầu để định tính và định danh từng
+                viên kim cương trên thị trường. Giấy kiểm định từ GIA
+              </p>
             </div>
           </div>
         </div>
@@ -126,27 +148,151 @@
           <h2>TẠI SAO CHỌN CHÚNG TÔI</h2>
           <div class="body-main-r-ser">
             <div class="body-main-r-ser-item">
-              <img src="{% static 'system/img/Diamond-Gold.png'%}" alt="">
-              <h3>KIM CƯƠNG GIÁ RẺ</h3>
-              <P>Cung cấp các mẫu trang sức đẹp sắc sảo, đẳng cấp trong kiểu dáng, tinh tế trong từng chi tiết với giá thành rẻ nhất thị trường hiện tại</P>
+              <img src="{% static 'system/img/Diamond-Gold.png'%}" alt="" />
+              <h3>Định giá nhanh chóng</h3>
+              <p>kiểm tra và định giá chính xác với trang thiết bị hiện đại</p>
+              <p>Khám phá ngay ></p>
             </div>
             <div class="body-main-r-ser-item">
-              <img src="{% static 'system/img/Trust.png'%}" alt="">
-              <h3>CHẤT LƯỢNG HOÀN MỸ</h3>
-              <P>Kim cương thiên nhiên nhập khẩu chính ngạch 100% được lựa chọn hết sức cẩn thận, có độ tinh khiết và sáng bóng dù là viên nhỏ nhất</P>
+              <img src="{% static 'system/img/Trust.png'%}" alt="" />
+              <h3>Phục vụ tốt nhất</h3>
+              <p>
+                Với nhân viên giàu kinh nghiệm sẽ giải đáp cũng như giúp đỡ tận
+                tình
+              </p>
+              <p>Khám phá ngay ></p>
             </div>
             <div class="body-main-r-ser-item">
-              <img src="{% static 'system/img/Clock.png'%}" alt="">
-              <h3>TẬN TÂM PHỤC VỤ</h3>
-              <P>Đội ngũ nhân viên tận tâm, yêu nghề, giàu chuyên môn, luôn sẵn sàng phục vụ. Đảm bảo làm hài lòng mọi khách hàng khó tính nhất</P>
+              <img src="{% static 'system/img/Clock.png'%}" alt="" />
+              <h3>Bảo hành trọn đời</h3>
+              <p>Miễn phí bảo hành trọn đời cho tất cả trang sức</p>
+              <p>Khám phá ngay ></p>
             </div>
-            <div class="body-main-r-ser-item">
-              <img src="{% static 'system/img/Gift.png'%}" alt="">
-              <h3>CHÍNH SÁCH HẤP DẪN</h3>
-              <P>Bảo hành và làm mới trang sức trọn đời. Nhận thu đổi kim cương với % cực hấp dẫn. Nhận bỏ sỉ kim cương giá tốt toàn Việt Nam</P>
-            </div>
-
           </div>
+        </div>
+
+        <div class="body-main-blog">
+          <div class="body-main-blog-l">
+            <img
+              src="{% static 'system/img/news.png' %}"
+              width="410"
+              height="530"
+            />
+          </div>
+          <div class="body-main-blog-r">
+            <h3>
+              Tin mới nhất
+              <div class="line"></div>
+            </h3>
+            <div class="body-main-blog-r-items">
+              <img
+                src="{% static 'system/img/blog1.webp'%}"
+                width="150"
+                height="100%"
+              />
+              <div>
+                <a href="#"
+                  >Kim cương Lab-grown là gì? Sự khác nhau giữa Kim cương tự
+                  nhiên và kim cương Lab-grown: Đâu là sự lựa chọn tốt nhất?</a
+                >
+                <p>30/12/2024</p>
+              </div>
+            </div>
+            <div class="body-main-blog-r-items">
+              <img
+                src="{% static 'system/img/blog1.webp'%}"
+                width="150"
+                height="100%"
+              />
+              <div>
+                <a href="#"
+                  >Kim cương Lab-grown là gì? Sự khác nhau giữa Kim cương tự
+                  nhiên và kim cương Lab-grown: Đâu là sự lựa chọn tốt nhất?</a
+                >
+                <p>30/12/2024</p>
+              </div>
+            </div>
+            <div class="body-main-blog-r-items">
+              <img
+                src="{% static 'system/img/blog1.webp'%}"
+                width="150"
+                height="100%"
+              />
+              <div>
+                <a href="#"
+                  >Kim cương Lab-grown là gì? Sự khác nhau giữa Kim cương tự
+                  nhiên và kim cương Lab-grown: Đâu là sự lựa chọn tốt nhất?</a
+                >
+                <p>30/12/2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <img
+          src="{% static 'system/img/logo.png '%}"
+          width="200"
+          height="250"
+        />
+
+        <div class="footer-items">
+          <h3>ĐỊNH GIÁ</h3>
+          <a href="">Nhẫn cưới</a>
+          <a href="">Nhẫn kim cương</a>
+          <a href="">Đá quý</a>
+          <a href="">Dây chuyền</a>
+          <a href="">Vòng tay</a>
+        </div>
+        <div class="footer-items">
+          <h3>LIÊN HỆ</h3>
+          <span href="">Gọi tư vấn</span>
+          <a href="">0124 6789 76</a>
+          <a href="">0231 6674 21</a>
+          <span>Góp ý khiếu nại</span>
+          <a href="">support@ut.edu.vn</a>
+        </div>
+        <div class="footer-items">
+          <h3>HỖ TRỢ</h3>
+          <a href="">Chính sách thu mua - định giá</a>
+          <a href="">Phương thức thanh toán</a>
+          <a href="">Bảo mật thông tin </a>
+        </div>
+        <div class="footer-items">
+          <h3>ABOUT US</h3>
+          <div class="footer-contact">
+            <a href=""
+              ><img src="{% static 'system/img/facebook.png' %}" alt=""
+            /></a>
+            <a href=""
+              ><img src="{% static 'system/img/instagram.png' %}" alt=""
+            /></a>
+            <a href=""
+              ><img src="{% static 'system/img/youtube.png' %}" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end">
+        <p>
+          Công ty Cổ phần Tierra - MST: 0314071883 - Do Sở kế hoạch và đầu tư
+          TPHCM cấp ngày 20/10/2016
+        </p>
+        <div class="footer-end-icon">
+          <img src="{% static 'system/img/rever.webp' %}" alt="" />
+          <img
+            src="{% static 'system/img/logo-bct.webp' %}"
+            width="109"
+            height="22"
+          />
+        </div>
+      </div>
+      <div class="Contact">
+        <img src="{% static 'system/img/form.webp' %}"  width="100%" height="75" />
+        <div class="contact-infor">
+          <input type="text" placeholder="Tên">
+          <input type="text" placeholder="Số điện thoại">
+          <button>Tư Vấn Ngay</button>
         </div>
       </div>
     </div>
