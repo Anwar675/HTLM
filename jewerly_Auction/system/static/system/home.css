@@ -314,6 +314,10 @@ body {
   color: white;
 }
 
+.footer a:hover {
+  text-decoration:underline;
+}
+
 .footer-items {
   padding: 0 12 px;
 }
