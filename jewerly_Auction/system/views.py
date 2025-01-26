@@ -31,3 +31,20 @@ def diamond_valuation_view(request):
             result = {"grade": "Invalid", "price_range": "Invalid"}
 
     return render(request, "valuation.html", {"result": result})
+
+def print_valuation_view(request):
+    context = {
+        "origin": request.POST.get("origin", ""),
+        "shape": request.POST.get("shape", ""),
+        "measurements": request.POST.get("measurements", ""),
+        "carat_weight": request.POST.get("carat_weight", ""),
+        "color": request.POST.get("color", ""),
+        "clarity": request.POST.get("clarity", ""),
+        "cut": request.POST.get("cut", ""),
+        "proportions": request.POST.get("proportions", ""),
+        "polish": request.POST.get("polish", ""),
+        "symmetry": request.POST.get("symmetry", ""),
+        "fluorescence": request.POST.get("fluorescence", ""),
+        "result": {"grade": "-", "price_range": "(0đ - 0đ)"}
+    }
+    return render(request, 'print.html', context)
