@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Valuation</title>
+    <link rel="stylesheet" href="{% static 'system/home.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Diamond Valuation</h1>
+    </header>
+    <main>
+        <section class="valuation-details">
+            <h2>Diamond Attributes</h2>
+            <p><strong>Origin:</strong> {{ origin }}</p>
+            <p><strong>Shape:</strong> {{ shape }}</p>
+            <p><strong>Measurements:</strong> {{ measurements }}</p>
+            <p><strong>Carat Weight:</strong> {{ carat_weight }}</p>
+            <p><strong>Color:</strong> {{ color }}</p>
+            <p><strong>Clarity:</strong> {{ clarity }}</p>
+            <p><strong>Cut:</strong> {{ cut }}</p>
+            <p><strong>Proportions:</strong> {{ proportions }}</p>
+            <p><strong>Polish:</strong> {{ polish }}</p>
+            <p><strong>Symmetry:</strong> {{ symmetry }}</p>
+            <p><strong>Fluorescence:</strong> {{ fluorescence }}</p>
+        </section>
+        <section class="valuation-result">
+            <h3>Grade</h3>
+            <h1>{{ result.grade|default:"-" }}</h1>
+            <p>{{ result.price_range|default:"(0đ - 0đ)" }}</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Nhom 3. All rights reserved.</p>
+    </footer>
+</body>
+</html>
