@@ -6,7 +6,11 @@
     <div class="valuation_table">
       <div class="valuation-item">
         <h5>Tên</h5>
-        <input type="text" name="Name" placeholder="Name" />
+        <input type="text" name="name" placeholder="Name" />
+      </div>
+      <div class="valuation-item">
+        <h5>Số Điện Thoại</h5>
+        <input type="text" name="phone" placeholder="Name" />
       </div>
       <div class="valuation-item">
         <h5>Nguồn Gốc</h5>
@@ -79,7 +83,7 @@
       </div>
       <form action="{% url 'print_valuation' %}" method="get">
         <button type="submit">In PDF</button>
-    </form>
+      </form>
     </div>
   </form>
 </div>

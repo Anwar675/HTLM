@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'system/home.css' %}" />
+    <link rel="stylesheet" href="{% static  'system/text.css' %}" />
+
     <script
       src="https://kit.fontawesome.com/d2d4b6cf81.js"
       crossorigin="anonymous"
@@ -49,7 +51,7 @@
           <li>Dịch Vụ</li>
           <li>Kiến thức kim cương</li>
           <li>Tra cứu</li>
-          <li><a href="{% url 'print_valuation' %}">In giấy theo mẫu</a></li>
+          <li><a >In giấy theo mẫu</a></li>
           <li><a href="{% url 'valuation' %}">Định giá</a></li>
           <li>Liên Hệ</li>
         </ul>
@@ -295,11 +297,24 @@
           width="100%"
           height="75"
         />
-        <div class="contact-infor">
-          <input type="text" placeholder="Tên" />
-          <input type="text" placeholder="Số điện thoại" />
-          <button>Tư Vấn Ngay</button>
-        </div>
+        <form method="POST">
+          {% csrf_token %}
+          <div class="contact-infor">
+            <input
+              type="text"
+              name="username"
+              placeholder="Tên đăng nhập"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Mật khẩu"
+              required
+            />
+            <button type="submit">Đăng nhập</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>

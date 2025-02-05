@@ -1,0 +1,18 @@
+.request-list {
+  list-style: none;
+  
+}
+
+.request-list li div {
+  border: 1px solid gray;
+  margin-top:12px 0;
+  
+}
+
+.request-list li {
+    margin:12px 0;
+}
+
+.request-list p {
+  margin: 4px 0;
+}

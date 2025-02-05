@@ -1,0 +1,45 @@
+{% extends "home.html" %} {% block body %}
+<h2>Danh Sách Yêu Cầu Định Giá</h2>
+<ul class="request-list">
+  {% for request in requests %}
+  <li>
+    <div>
+      <strong>{{ request.name }}</strong> - {{ request.get_status_display }}<br />
+        <p>{{request.date}}</p>
+      <p>Số điện thoại: {{ request.phone }}</p>
+      <p>Nguồn gốc: {{ request.origin }}<br /></p>
+      <p>Hình dáng: {{ request.shape }}<br /></p>
+      <p>Trọng lượng: {{ request.carat_weight }} Carat<br /></p>
+      <p>Giá trị ước tính: {{ request.price_range }}<br /></p>
+    </div>
+
+    <form
+      action="{% url 'send_request' request.id %}"
+      method="post"
+      style="display: inline"
+    >
+      {% csrf_token %}
+      <button
+        type="submit"
+        
+      >
+        Gửi kết quả
+      </button>
+    </form>
+    <form
+      action="{% url 'delete_request' request.id %}"
+      method="post"
+      style="display: inline"
+    >
+      {% csrf_token %}
+      <button
+        type="submit"
+        onclick="return confirm('Bạn có chắc chắn muốn xóa yêu cầu này không?')"
+      >
+        Xóa
+      </button>
+    </form>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
