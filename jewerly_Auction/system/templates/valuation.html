@@ -81,7 +81,7 @@
         <h1>{{ result.grade|default:"-" }}</h1>
         <p>{{ result.price_range|default:"(0đ - 0đ)" }}</p>
       </div>
-      <form action="{% url 'print_valuation' %}" method="get">
+      <form>
         <button type="submit">In PDF</button>
       </form>
     </div>
